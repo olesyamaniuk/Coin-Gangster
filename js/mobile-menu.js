@@ -46,18 +46,4 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-function toggleAnswer(element) {
-  const answer = element.nextElementSibling;
-  const buttonImg = element.querySelector(".toggle-button img"); 
-
-  if (answer.style.display === "none" || answer.style.display === "") {
-    answer.style.display = "block";
-    buttonImg.src = "/image/faq//icon close.png"; 
-  } else {
-    answer.style.display = "none";
-    buttonImg.src = "/image/faq/icon open.png"; 
-  }
-}
-
-
 

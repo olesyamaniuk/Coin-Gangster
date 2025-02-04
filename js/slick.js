@@ -19,7 +19,7 @@ $(function () {
 
 
 $(function () {
-  $('.reviews-list').slick({
+  $('.faq-list').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -30,8 +30,8 @@ $(function () {
     dots: false,
     centerMode: true,
     cssEase: 'linear',
-    prevArrow: '.reviews-list-left',
-    nextArrow: '.reviews-list-right',
+    prevArrow: '.faq-list-left',
+    nextArrow: '.faq-list-right',
   });
 });
 

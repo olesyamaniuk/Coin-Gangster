@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
 }
@@ -113,7 +113,8 @@ a {
   background: transparent;
   display: flex;
   height: 60px;
-  background: linear-gradient(180deg, #7ebeff 0%, #0062eb 100%);
+  background: rgba(164, 44, 121, 1);
+  border-bottom: 4px solid rgba(255, 253, 138, 1);
 }
 .header__background {
   position: absolute;
@@ -125,7 +126,8 @@ a {
   z-index: -1;
   -webkit-transition: left 0.3s ease;
   transition: left 0.3s ease;
-  background: linear-gradient(180deg, #7ebeff 0%, #0062eb 100%);
+  background: rgba(164, 44, 121, 1);
+  border-bottom: 4px solid rgba(255, 253, 138, 1);
 }
 .header.is-open .header__background {
   left: 0;
@@ -199,26 +201,24 @@ a {
   padding: 0px 32px;
 
   border-radius: 0px 0px 20px 20px;
-  gap: 28px;
-  background: linear-gradient(180deg, #1b77ff 0%, #a7d3ff 100%);
-  border-width: 2px 0px;
-  border-style: solid;
-  border-color: rgba(255, 255, 255, 1);
+  gap: 34px;
+  background: rgba(164, 44, 121, 1);
+  border-bottom: 2px solid rgba(255, 253, 138, 1);
 }
 .navigation__list.is-open {
   right: 0;
 }
 .navigation__link {
-  font-family: Roboto;
+  font-family: Raleway;
   font-size: 18px;
-  font-weight: 700;
-  line-height: 21.09px;
+  font-weight: 800;
+  line-height: 21.13px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 
   text-decoration: none;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 253, 138, 1);
 }
 
 .header.is-open {
@@ -244,6 +244,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    border-radius: 0px 0px 28px 28px;
 
     z-index: 1000;
   }
@@ -285,10 +287,10 @@ a {
     justify-content: center;
   }
   .navigation__link {
-    font-family: Roboto;
+    font-family: Raleway;
     font-size: 18px;
-    font-weight: 700;
-    line-height: 21.09px;
+    font-weight: 800;
+    line-height: 21.13px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
@@ -306,13 +308,13 @@ a {
 
 .home {
   width: 375px;
-  height: 800px;
+  height: 878px;
 
-  padding: 72px 11px 0px;
+  padding: 59px 7px 0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/image/home/Home.png");
+  background-image: url("/img/home/Home.png");
   margin: auto;
 }
 
@@ -322,44 +324,47 @@ a {
   align-items: center;
 }
 .home-title-img {
-  width: 352px;
-  height: 106px;
+  width: 190px;
+  height: 172px;
 }
 .home-title {
-  font-family: Roboto;
+  font-family: Raleway;
   font-size: 22px;
   font-weight: 900;
-  line-height: 25.78px;
+  line-height: 28px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-
-  color: rgba(9, 21, 68, 1);
-  padding: 18px 0;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #fff62b 0%, #fdb72f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 1);
+  padding: 12px 0;
 }
 
 .home-text {
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 600;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 900;
   line-height: 22px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 1);
   color: rgba(255, 255, 255, 1);
-  text-shadow: 0px 1px 0px rgba(0, 15, 41, 1);
 }
 .home__google-button_image {
-  margin-top: 22px;
+  margin-top: 12px;
 }
 @media screen and (min-width: 1200px) {
   .home {
     width: 1440px;
     height: 800px;
 
-    padding: 144px 707px 0px 47px;
-    background-image: url("/image/home/Home\ \(1\).png");
+    padding: 102px 688px 0px 41px;
+    background-image: url("/img/home/Home\ \(1\).png");
   }
   .home__container-top {
     display: flex;
@@ -368,152 +373,159 @@ a {
     justify-content: center;
   }
   .home-title-img {
-    width: 706px;
-    height: 212px;
+    width: 332px;
+    height: 300px;
   }
   .home-title {
-    font-family: Roboto;
-    font-size: 38px;
+    font-family: Raleway;
+    font-size: 34px;
     font-weight: 900;
-    line-height: 44.53px;
+    line-height: 40px;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 
-    width: 636px;
-    padding: 25px 0 35px;
+    width: 548px;
+    padding: 13px 0;
   }
 
   .home-text {
-    font-family: Roboto;
+    font-family: Raleway;
     font-size: 18px;
-    font-weight: 600;
-    line-height: 26px;
+    font-weight: 900;
+    line-height: 24px;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 
-    width: 636px;
+    width: 696px;
   }
   .home__google-button_image {
-    margin-top: 53px;
+    margin-top: 28px;
   }
 }
 .about {
-  padding: 40px 20px 0px;
+  padding: 28px 20px 0px;
   margin: auto;
   width: 375px;
-  height: 1050px;
+  height: 751px;
 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/image/about/About\ the\ Game.png");
+  background-image: url("/img/about/About\ us.png");
 }
 
 .about-title {
-  font-family: Roboto;
+  font-family: Raleway;
   font-size: 40px;
-  font-weight: 700;
-  line-height: 30px;
+  font-weight: 900;
+  line-height: 46.96px;
+  letter-spacing: 0.03em;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 
-  color: rgba(255, 255, 255, 1);
+  color: rgba(37, 0, 61, 1);
 }
-.about-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding-top: 40px;
-}
+
 .about-text {
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 32px;
-  text-align: left;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+
   color: rgba(35, 1, 8, 1);
-  padding: 50px 0;
+  width: 335px;
+  padding: 26px;
+  border-radius: 32px;
+  background: rgba(255, 255, 240, 1);
+  border: 1px solid rgba(149, 49, 133, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
 }
 
 @media screen and (min-width: 1200px) {
   .about {
-    padding: 50px 60px 0;
+    padding: 28px 80px 0;
     margin: auto;
     width: 1440px;
     height: 600px;
-
-    background-image: url("/image/about/About\ the\ Game\ \(1\).png");
+    background-image: url("/img/about/About\ us\ \(1\).png");
   }
 
   .about-title {
-    font-family: Roboto;
+    font-family: Raleway;
     font-size: 40px;
-    font-weight: 700;
-    line-height: 30px;
+    font-weight: 900;
+    line-height: 46.96px;
+    letter-spacing: 0.03em;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
 
   .about-text {
-    width: 733px;
-    font-family: Roboto;
+    font-family: Raleway;
     font-size: 20px;
-    font-weight: 600;
-    line-height: 32px;
-    text-align: left;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    padding: 50px 0 0;
+
+    width: 1280px;
+    margin-top: 73px;
   }
 }
-.reviews {
+.faq {
   width: 375px;
 
   margin: auto;
-  padding: 51px 0px 51px;
-  background: linear-gradient(180deg, #1b77ff 0%, #a7d3ff 100%);
+  padding: 28px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/FAQ.png");
 }
 
-.reviews-list {
+.faq-list {
   width: auto;
   padding-top: 40px;
-  padding-bottom: 32px;
+  padding-bottom: 22px;
   margin: auto;
 }
-.reviews-item {
+.faq-item {
   margin: 0 5px;
   width: 335px;
-  height: 269px;
-  padding: 12px;
-  border-radius: 24px;
-  background: rgba(244, 249, 255, 1);
-}
-.reviews-img {
-  margin: auto;
+  height: 170px;
+  padding: 18px;
+  border-radius: 26px;
+  background: rgba(255, 255, 240, 1);
+  border: 1px solid rgba(149, 49, 133, 1);
 }
 
-.reviews-text-bold {
-  font-family: Roboto;
+.faq-text-bold {
+  font-family: Raleway;
   font-size: 20px;
   font-weight: 700;
-  line-height: 23.44px;
+  line-height: 23.48px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 
-  padding: 12px 0 6px;
+  padding: 0px 0 16px;
 }
-.reviews-text {
-  font-family: Roboto;
-  font-size: 16px;
+.faq-text {
+  font-family: Raleway;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 18.75px;
+  line-height: 26px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -539,178 +551,44 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
-  .reviews {
-    width: 1440px;
-
-    margin: auto;
-    padding: 32px 0px 70px;
-  }
-
-  .reviews-list {
-    width: auto;
-    padding-top: 49px;
-    padding-bottom: 32px;
-    margin: auto;
-  }
-  .reviews-item {
-    margin: 0 16px;
-    width: 440px;
-    height: 231px;
-    padding: 12px 12px 24px;
-    border-radius: 24px;
-    background: rgba(244, 249, 255, 1);
-  }
-}
-
-.faq {
-  padding: 32px 20px 0;
-  margin: auto;
-  width: 375px;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  background-image: url("/image/faq/FAQ.png");
-}
-.faq-container {
-  padding-top: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  margin: auto;
-}
-
-.faq-item {
-  padding: 8px 12px;
-}
-
-.faq-question {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 23.44px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-
-  color: rgba(255, 255, 255, 1);
-}
-
-.toggle-button {
-  background: none;
-  border: none;
-
-  cursor: pointer;
-}
-
-.faq-answer {
-  width: 261px;
-
-  color: rgba(255, 255, 255, 1);
-  display: none;
-  padding-top: 16px;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18.75px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(255, 255, 255, 1);
-}
-.faq-img {
-  width: 353px;
-  height: 424.76px;
-}
-@media screen and (min-width: 1200px) {
   .faq {
-    padding: 32px 0px 0 100px;
-    margin: auto;
     width: 1440px;
-
-    background-image: url("/image/faq/FAQ\ \(1\).png");
-  }
-  .faq-div {
-    display: flex;
-    align-items: start;
-    justify-content: start;
-  }
-  .faq-container {
-    padding-top: 55px;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    margin: 0;
+    height: 400px;
+    padding: 28px 0px;
   }
 
+  .faq-list {
+    width: auto;
+    padding-top: 40px;
+    padding-bottom: 22px;
+    margin: auto;
+  }
   .faq-item {
-    padding: 8px 37px 10px 0;
-    width: 763px;
-  }
-
-  .faq-question {
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 23.44px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-
-  .toggle-button {
-    background: none;
-    border: none;
-
-    cursor: pointer;
-  }
-
-  .faq-answer {
-    width: 619px;
-
-    color: rgba(255, 255, 255, 1);
-    display: none;
-    padding-top: 16px;
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18.75px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-  .faq-img {
-    width: 610px;
-    height: 734px;
+    margin: 0 5px;
+    width: 655px;
+    height: 146px;
+    padding: 32px 36px;
   }
 }
+
 .gallery {
   width: 375px;
-  height: 670px;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  background-image: url("/image/gallery/Gallery.png");
+  background: rgba(254, 224, 88, 1);
 
   margin: auto;
-  padding: 32px 0px 0;
+  padding: 28px 0px 20px;
 }
 
 .gallery__list {
   width: auto;
   padding-top: 40px;
-  padding-bottom: 28px;
+  padding-bottom: 22px;
 
   margin: auto;
 }
 .gallery__item {
-  width: 308px;
-  height: 412px;
+  width: 285.13px;
+  height: 400px;
 
   overflow: hidden;
   position: relative;
@@ -727,14 +605,12 @@ a {
 @media screen and (min-width: 1200px) {
   .gallery {
     width: 1440px;
-    background-image: url("/image/gallery/Gallery\ \(1\).png");
-    margin: auto;
-    padding: 32px 0 0;
+    padding: 28px 0;
   }
 
   .gallery__item {
-    width: 308px;
-    height: 412px;
+    width: 285.13px;
+    height: 400px;
 
     margin: 0 10px;
     overflow: hidden;
@@ -743,42 +619,52 @@ a {
 }
 .features {
   width: 375px;
-
+  height: 1160px;
   margin: auto;
-  padding: 32px 20px;
-  background: linear-gradient(180deg, #cbe4ff 0%, #ffffff 100%);
+  padding: 40px 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/features/Benefits.png");
 }
 
 .features-list {
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 24px;
 }
 .features-item {
-  width: 335px;
-  display: flex;
-  gap: 12px;
-  align-items: center;
+  width: 269px;
+  height: 253.55px;
+  padding: 22px 16px 22px 16px;
+  border-radius: 22px;
+  opacity: 0px;
+  background: rgba(255, 255, 240, 1);
+  border: 2px solid rgba(149, 49, 133, 1);
+  box-shadow: 0px 0px 22px 0px rgba(255, 255, 255, 1);
 }
-
+.features-img {
+  margin: auto;
+}
 .features-text-bold {
-  font-family: Roboto;
-  font-size: 20px;
+  font-family: Raleway;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 23.44px;
-  text-align: left;
+  line-height: 18.78px;
+  text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  text-transform: uppercase;
-  padding: 0px 0 6px;
+  color: rgba(35, 1, 3, 1);
+  padding: 22px 0 12px;
 }
 .features-text {
-  font-family: Roboto;
+  color: rgba(35, 1, 3, 1);
+  font-family: Raleway;
   font-size: 16px;
   font-weight: 400;
-  line-height: 18.75px;
-  text-align: left;
+  line-height: 22px;
+  text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
@@ -786,57 +672,30 @@ a {
 @media screen and (min-width: 1200px) {
   .features {
     width: 1440px;
-    padding: 103px;
+    height: 400px;
+    padding: 72px 122px;
+    background-image: url("/img/features/Benefits\ \(1\).png");
   }
 
   .features-list {
     margin: auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 35px;
-    column-gap: 83px;
-  }
-  .features-item {
-    width: 567px;
-    display: flex;
-    gap: 12px;
-    align-items: center;
-  }
-
-  .features-text-bold {
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 23.44px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    text-transform: uppercase;
-    padding: 0px 0 6px;
-  }
-  .features-text {
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18.75px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    gap: 40px;
   }
 }
 .footer {
-  background: linear-gradient(180deg, #7ebeff 0%, #0062eb 100%);
+  background: rgba(149, 49, 133, 1);
 
-  color: #ffffff;
-  padding: 14px;
+  color: rgba(255, 253, 138, 1);
+  padding: 12px;
 }
 .footer-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
 }
 
 .footer-wrapper {
@@ -849,24 +708,24 @@ a {
   gap: 4px;
 }
 .footer-text {
-  font-family: Roboto;
+  font-family: Raleway;
   font-size: 16px;
   font-weight: 500;
-  line-height: 18.75px;
+  line-height: 18.78px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 
   text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
+  color: rgba(255, 253, 138, 1);
 }
 
 .footer-copyright {
-  font-family: Roboto;
+  font-family: Raleway;
   font-size: 10px;
   font-weight: 500;
-  line-height: 11.72px;
+  line-height: 11.74px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -874,10 +733,10 @@ a {
 
 @media screen and (min-width: 1200px) {
   .footer {
-    padding: 30px 0px;
+    padding: 20px 0px;
   }
   .footer-container {
-    gap: 20px;
+    gap: 12px;
   }
 
   .footer-wrapper {
@@ -889,30 +748,30 @@ a {
     gap: 6px;
   }
   .footer-text {
-    font-family: Roboto;
+    font-family: Raleway;
     font-size: 18px;
     font-weight: 500;
-    line-height: 21.09px;
+    line-height: 21.13px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
 
   .footer-copyright {
-    font-family: Roboto;
+    font-family: Raleway;
     font-size: 10px;
     font-weight: 500;
-    line-height: 11.72px;
+    line-height: 11.74px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
 }
 .policy-terms-container {
-  padding: 124px 16px 116px;
+  padding: 140px 20px 40px;
 }
 .policy-terms-title {
-  font-family: Roboto;
+  font-family: Raleway;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
@@ -922,7 +781,7 @@ a {
 }
 
 .policy-terms-text {
-  font-family: Roboto;
+  font-family: Raleway;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
@@ -933,7 +792,7 @@ a {
   padding-top: 20px;
 }
 .policy-terms-texts {
-  font-family: Roboto;
+  font-family: Raleway;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -944,7 +803,7 @@ a {
   padding-top: 8px;
 }
 .policy-terms-text-one {
-  font-family: Roboto;
+  font-family: Raleway;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -959,7 +818,7 @@ a {
   list-style-type: disc;
 
   padding: 20px 0 20px 25px;
-  font-family: Roboto;
+  font-family: Raleway;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -975,7 +834,7 @@ a {
   list-style-type: disc;
 
   padding-left: 25px;
-  font-family: Roboto;
+  font-family: Raleway;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -993,7 +852,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .policy-terms-container {
-    padding: 186px 80px 116px;
+    padding: 140px 86px 40px;
   }
 }
 .cookie-popup {
@@ -1003,7 +862,7 @@ a {
   border-radius: 20px;
   padding: 30px;
   background: rgba(255, 255, 255, 1);
-  border: 1px solid rgba(102, 214, 253, 1);
+  border: 1px solid rgba(149, 49, 133, 1);
   box-shadow: 0px 14px 42px 0px rgba(8, 15, 52, 0.06);
 
   text-align: center;
@@ -1013,7 +872,7 @@ a {
 }
 
 .cookie-popup-text-two {
-  font-family: Roboto;
+  font-family: Raleway;
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
@@ -1034,7 +893,7 @@ a {
 }
 .cookie-button {
   border: none;
-  font-family: Roboto;
+  font-family: Raleway;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -1052,8 +911,7 @@ a {
   padding: 18px 26px 18px 26px;
   color: rgba(255, 255, 255, 1);
   border-radius: 56px;
-  opacity: 0px;
-  background: rgba(88, 205, 254, 1);
+  background: rgba(149, 49, 133, 1);
 
   box-shadow: 0px 3px 12px 0px rgba(74, 58, 255, 0.18);
 }
@@ -1066,7 +924,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .cookie-popup-text-two {
-    font-family: Ubuntu;
+    font-family: Raleway;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
